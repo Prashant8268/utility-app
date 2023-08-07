@@ -1,16 +1,19 @@
 
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home(){
 
     return(
         <div className="home-container">
-            <a href="todo" className="btn btn-warning link">
+         
+                <Link  to='/todo'  className="nav-link active" aria-current="page">
                 To Do App
-            </a>
-            <a href="notes" className="btn btn-warning link">
+            </Link>
+            <Link to ='/notes'>  
                 Note Keeper
-            </a>
+                </Link>
+
         </div>
     )
 }
