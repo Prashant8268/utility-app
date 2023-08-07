@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/prashant8268.github.io/utility-app/static/css/main.33f94fab.css",
-    "main.js": "/prashant8268.github.io/utility-app/static/js/main.d01b9040.js",
-    "static/js/787.2843ca88.chunk.js": "/prashant8268.github.io/utility-app/static/js/787.2843ca88.chunk.js",
-    "index.html": "/prashant8268.github.io/utility-app/index.html",
-    "main.33f94fab.css.map": "/prashant8268.github.io/utility-app/static/css/main.33f94fab.css.map",
-    "main.d01b9040.js.map": "/prashant8268.github.io/utility-app/static/js/main.d01b9040.js.map",
-    "787.2843ca88.chunk.js.map": "/prashant8268.github.io/utility-app/static/js/787.2843ca88.chunk.js.map"
+    "main.css": "/utility-app/static/css/main.33f94fab.css",
+    "main.js": "/utility-app/static/js/main.81d678eb.js",
+    "static/js/787.2843ca88.chunk.js": "/utility-app/static/js/787.2843ca88.chunk.js",
+    "index.html": "/utility-app/index.html",
+    "main.33f94fab.css.map": "/utility-app/static/css/main.33f94fab.css.map",
+    "main.81d678eb.js.map": "/utility-app/static/js/main.81d678eb.js.map",
+    "787.2843ca88.chunk.js.map": "/utility-app/static/js/787.2843ca88.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33f94fab.css",
-    "static/js/main.d01b9040.js"
+    "static/js/main.81d678eb.js"
   ]
 }
