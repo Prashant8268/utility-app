@@ -7,10 +7,10 @@ function Home(){
     return(
         <div className="home-container">
          
-                <Link  to='/todo'  className="nav-link active" aria-current="page">
+                <Link  to='/utility-app/todo'  className="nav-link active" aria-current="page">
                 To Do App
             </Link>
-            <Link to ='/notes'>  
+            <Link to ='/utility-app/notes'>  
                 Note Keeper
                 </Link>
 

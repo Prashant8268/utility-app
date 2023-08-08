@@ -3,7 +3,9 @@ import { Provider } from "react-redux";
 import TodoForm from "./components/ToDoForm/ToDoForm";
 import TodoList from "./components/ToDoList/ToDoList";
 import {store} from "./redux/store";
-import {BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import './App.css';
 import NoteForm from "./components/NoteForm/NoteForm";
@@ -15,11 +17,11 @@ function App() {
 
   const router= createBrowserRouter([
     {
-      path: '/', element: <Home />
+      path: '/utility-app', element: <Home />
 
     },
     {
-      path:'todo',element: <Fragment>
+      path:'/utility-app/todo',element: <Fragment>
       <NavBar />
      <h1>To Dos</h1>
       <TodoForm  />
@@ -27,7 +29,7 @@ function App() {
     </Fragment>
     },
     {
-      path: 'notes',element:<Fragment>
+      path: '/utility-app/notes',element:<Fragment>
       <NavBar />
       <h1>Notes</h1>
      <NoteForm  />
