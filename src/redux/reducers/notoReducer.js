@@ -1,6 +1,5 @@
 import * as redux from 'redux';
 
-import { ADD_NOTE,DELETE_NOTE } from '../actions/noteActions';
 import { createSlice } from '@reduxjs/toolkit';
 
 

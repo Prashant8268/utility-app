@@ -1,6 +1,7 @@
 // middleware gives access to store, action, and next middle ware 
 // here we will use the concept of cascade functions or currying in javasCript 
 
+
 export const loggerMiddleware = (store)=>{
     return function(next){
         return function(action){
@@ -13,7 +14,7 @@ export const loggerMiddleware = (store)=>{
 
             // check the modified store
 
-            console.log(store.getStore());
+            console.log(store.getState());
 
         }
     }

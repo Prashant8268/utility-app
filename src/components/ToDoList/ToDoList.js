@@ -1,11 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
 import { toggleTodo } from "../../redux/actions/todoActions";
-import { actions, todoSelector } from "../../redux/reducers/todoReducer";
+import { actions, setInitialStateAsync, todoSelector } from "../../redux/reducers/todoReducer";
 import { useEffect } from "react";
 import axios from "axios";
 
 import "./ToDoList.css";
 import { json } from "react-router-dom";
+import { daysInWeek } from "date-fns";
 
 function ToDoList() {
 
@@ -15,7 +16,7 @@ function ToDoList() {
   // we can use below code instead of above 
   const   todos = useSelector(todoSelector)
 
-  const disptach = useDispatch();
+  const dispatch = useDispatch();
   // const todos= store.getState().todos;
 
   useEffect(()=>{
@@ -24,14 +25,12 @@ function ToDoList() {
     // .then(parsedJson=>{
     //   console.log(parsedJson);   
     // }
-    axios.get('http://localhost:4100/api/todos/')
-    .then(res=>{
-      console.log(res.data);
-      disptach(actions.setInitialState(res.data));
-    })
-
-    
-
+    // axios.get('http://localhost:4100/api/todos/')
+    // .then(res=>{
+    //   console.log(res.data);
+    //   dispatch(actions.setInitialState(res.data));
+    // })
+    dispatch(setInitialStateAsync());
   },[])
 
 
@@ -44,7 +43,7 @@ function ToDoList() {
           <span className="content">{todo.text}</span>
           <span className={todo.completed ? 'completed':'pending'}>{todo.completed ? 'Completed': 'Pending'}</span>
           <button className="btn btn-warning"
-          onClick={()=>{disptach(actions.toggle(index))}}
+          onClick={()=>{dispatch(actions.toggle(index))}}
           >Toggle</button>
           </li>
       ))}
